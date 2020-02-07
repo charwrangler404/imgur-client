@@ -24,23 +24,23 @@ def authenticate():
 
     return client
 
-def search(query)
-   #TODO: Search for a number of galleries that match the query
-   #TODO: accumulate the galleries found into a list 'galleries'
+def search(query):
    galleries = []
-    browser = webdriver.Firefox()
-    browser.get(query)
-    for gallery in browser.find_elements_by_class_name('image-list-link')
-        link = 'https:' + gallery.get_attribute('href')
-        galleries.append(link)
-    browser.quit()
-    return galleries
+   browser = webdriver.Firefox()
+   browser.get(query)
+   for gallery in browser.find_elements_by_class_name('image-list-link'):
+       link = gallery.get_attribute('href')
+       galleries.append(link)
+   browser.quit()
+   return galleries
 
 def scrape_album(gallery, destination):
     # TODO - download images in the gallery to the destination folder
+    print(gallery)
+
 
 if __name__ == '__main__':
-    client = authenticate()
+ #   client = authenticate()
 
     galleries = search(args.query)
 
