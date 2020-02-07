@@ -1,5 +1,5 @@
 # Imgur-Client
 
-imgur-client.py
+scraper.py
 
 scrape cat gifs from imgur
