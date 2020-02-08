@@ -1,4 +1,4 @@
-# Imgur-Client
+# Imgur-Client 
 
 scraper.py
 
